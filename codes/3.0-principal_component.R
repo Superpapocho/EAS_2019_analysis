@@ -1,7 +1,7 @@
 # Componentes principales ---- 
-# ¿Es posible una reduccion de dimensionalidad, cómo se interpreta?
+# Â¿Es posible una reduccion de dimensionalidad, cÃ³mo se interpreta?
 library(factoextra)   # Principal component
-library(ggplot2)      # Gráficas
+library(ggplot2)      # GrÃ¡ficas
 
 # Limpieza de la base ----
 
