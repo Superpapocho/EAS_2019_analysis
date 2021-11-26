@@ -1,12 +1,12 @@
-# Regresión lineal múltiple ----
-# ¿Qué tan importante es la equidad de género en los resultados financieros de las empresas?
+# RegresiÃ³n lineal mÃºltiple ----
+# Â¿QuÃ© tan importante es la equidad de gÃ©nero en los resultados financieros de las empresas?
 
 library(readr)  # Read csv
 library(haven)  # Read dta
 library(dplyr)  # database manipulation
 library (stargazer)
 
-setwd("D:/Desktop/MACC/VII Semestre/Análisis Estadístico de Datos/Proyecto")
+setwd("D:/Desktop/MACC/VII Semestre/AnÃ¡lisis EstadÃ­stico de Datos/Proyecto")
 EAS_2019 = EAS_2019 %>% select(Division, intio, ocgtot, CONINTER, SULSAL, PRESTA, VALAGRE, TOTG, idaio, insertot, potpsfr, potpau, pottot, pomtot, gpptpot, ocgrps, gmesetot, gsptot, ocgid, ocgoi, opcomex)
 
 EAS_2019$sector = NA
@@ -25,7 +25,7 @@ EAS_2019$sector = as.factor(EAS_2019$sector)
 
 EAS_2019 = EAS_2019 %>% select(-Division)
 
-#Modificamos la variable de años
+#Modificamos la variable de aÃ±os
 EAS_2019$idaio = 2019 - EAS_2019$idaio
 na.omit(EAS_2019)
 
